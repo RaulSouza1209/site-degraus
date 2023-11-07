@@ -269,6 +269,13 @@ footer .container {
     align-items: center;
 }
 
+.warnings .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .warning {
     display: flex;
     flex-direction: column;
@@ -336,6 +343,20 @@ footer .container {
 
     .warning {
         width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .warnings {
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .warning {
+        width: 100%;
         margin: 0 auto;
     }
 }
