@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #004241;
+    --second-color: #bcb71b;
+    --third-color: #056839;
+    --white: #fff;
+    font-size: 62.5%;
+}
+
+header {
+    width: 100%;
+}
+
+.container {
+    width: 100rem;
+    margin: 0 auto;
+}
+
+.contact {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.contact-details li {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: .5rem;
+    color: var(--white);
+}
+
+.contact-details li i {
+    font-size: 1.2rem;
+}
+
+.contact-details li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.contact-details li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+.nav-bar {
+    width: 100%;
+    background-color: var(--third-color);
+    padding: .5rem;
+}
+
+.logo img {
+    width: 14rem;
+}
+
+.header-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    gap: 3rem;
+}
+
+.menu-list li {
+    list-style: none;
+}
+
+.menu-list li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.6rem;
+    transition: .5s;
+}
+
+.menu-list li a:hover {
+    color: var(--second-color);
+}
+
+
+
+
+
+
+
+
+#button {
+    width: 5rem;
+    height: 5rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 1rem;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    bottom: -3rem;
+    right: 10rem;
+    transition: all .5s ease;
+    opacity: 0;
+}
+
+#button.show {
+    opacity: 1;
+    bottom: 3rem;
+}
+
+#button:hover {
+    background-color: var(--third-color);
+}
+
+#button i {
+    font-size: 1.6rem;
+}
+
+
+
+
+
+
+
+
+
+
+.footer-banner {
+    width: 100%;
+}
+
+.footer-banner img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    padding: 3rem;
+    background-color: var(--third-color);
+    color: var(--white);
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+}
+
+.social-medias {
+    display: flex;
+    gap: 2rem;
+}
+
+.social-medias a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.social-medias a i {
+    font-size: 2rem;
+    transition: .5s;
+}
+
+.social-medias a:hover i {
+    color: var(--primary-color);
+}
+
+.header {
+    width: 100%;
+    background-image: url('../assets/sectionbg.jpg');
+    background-size: cover;
+    padding: 10rem 0;
+    text-align: center;
+}
+
+.header h3 {
+    font-size: 3rem;
+    font-weight: lighter;
+    color: var(--white);
+}
+
+.header h1 {
+    font-size: 8rem;
+    font-weight: bolder;
+    color: var(--white);
+}
+
+.history {
+    background-image: url('../assets/sectionbg2.png');
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.history h3 {
+    font-size: 6rem;
+    color: var(--third-color);
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.history p {
+    font-size: 3rem;
+    font-weight: normal;
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+
+.warnings {
+    width: 100%;
+    padding: 5rem;
+    background-image: url('../assets/sectionbg3.png');
+    background-size: cover;
+    display: flex;
+}
+
+.warning {
+    width: 100%;
+}
+
+.warning-head {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.warning-head i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.warning-head p {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.warning-body {
+    height: fit-content;
+}
+
+.warning-body p {
+    font-size: 1.6rem;
+    margin: 2rem 0;
+}
+
+.warning-body img {
+    width: 100%;
+    height: 100%;
+}

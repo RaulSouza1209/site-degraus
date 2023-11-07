@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #004241;
+    --second-color: #bcb71b;
+    --third-color: #056839;
+    --white: #fff;
+    font-size: 62.5%;
+}
+
+header {
+    width: 100%;
+}
+
+.container {
+    width: 100rem;
+    margin: 0 auto;
+}
+
+.contact {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.contact-details li {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: .5rem;
+    color: var(--white);
+}
+
+.contact-details li i {
+    font-size: 1.2rem;
+}
+
+.contact-details li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.contact-details li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+.nav-bar {
+    width: 100%;
+    background-color: var(--third-color);
+    padding: .5rem;
+}
+
+.logo img {
+    width: 14rem;
+}
+
+.header-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    gap: 3rem;
+}
+
+.menu-list li {
+    list-style: none;
+}
+
+.menu-list li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.6rem;
+    transition: .5s;
+}
+
+.menu-list li a:hover {
+    color: var(--second-color);
+}
+
+
+
+
+
+
+
+#button {
+    width: 5rem;
+    height: 5rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 1rem;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    bottom: -3rem;
+    right: 10rem;
+    transition: all .5s ease;
+    opacity: 0;
+}
+
+#button.show {
+    opacity: 1;
+    bottom: 3rem;
+}
+
+#button:hover {
+    background-color: var(--third-color);
+}
+
+#button i {
+    font-size: 1.6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer-banner {
+    width: 100%;
+}
+
+.footer-banner img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    padding: 3rem;
+    background-color: var(--third-color);
+    color: var(--white);
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+}
+
+.social-medias {
+    display: flex;
+    gap: 2rem;
+}
+
+.social-medias a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.social-medias a i {
+    font-size: 2rem;
+    transition: .5s;
+}
+
+.social-medias a:hover i {
+    color: var(--primary-color);
+}
+
+.header {
+    width: 100%;
+    background-image: url('../assets/sectionbg.jpg');
+    background-size: cover;
+    padding: 10rem 0;
+    text-align: center;
+}
+
+.header h3 {
+    font-size: 3rem;
+    font-weight: lighter;
+    color: var(--white);
+}
+
+.header h1 {
+    font-size: 8rem;
+    font-weight: bolder;
+    color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.class {
+    width: 100%;
+    padding: 5rem;
+    background-image: url('../assets/sectionbg2.png');
+    background-size: cover;
+}
+
+.class .container {
+    display: flex;
+    justify-content: center;
+}
+
+.class-text {
+    width: 50%;
+}
+
+.class-text h1 {
+    font-size: 4rem;
+    color: var(--third-color);
+    margin-bottom: 3rem;
+}
+
+.class-text p {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.class-img {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.class-img img {
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+.instructors {
+    background-image: url('../assets/sectionbginstructors.png');
+    background-size: cover;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.instructors i {
+    font-size: 5rem;
+    color: var(--white);
+    margin-bottom: 3rem;
+}
+
+.instructors h1 {
+    font-size: 5rem;
+    color: var(--white);
+    margin-bottom: 3rem;
+}
+
+.instructors .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.instructor {
+    width: 20%;
+    height: fit-content;
+    padding: 2rem 1rem;
+    background-color: var(--white);
+    border-radius: 2rem;
+}
+
+.instructor h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.instructor p {
+    font-size: 1.6rem;
+    color: var(--third-color);
+}
