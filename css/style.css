@@ -299,13 +299,13 @@ main {
 
 @media screen and (max-width: 650px) {
     .slider {
-        height: 35vh;
+        height: 30vh;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 415px) {
     .slider {
-        height: 35vh;
+        height: 20vh;
     }
 }
 
