@@ -281,7 +281,9 @@ footer .container {
     }
 
     .video {
-        width: 45%;
+        width: 35%;
+        display: flex;
+        justify-content: center;
     }
 }
 

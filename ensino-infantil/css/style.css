@@ -253,6 +253,10 @@ footer .container {
 
 .class-text {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .class-text h1 {
@@ -269,7 +273,7 @@ footer .container {
 .class-img {
     width: 50%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .class-img img {
