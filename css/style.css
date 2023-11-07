@@ -254,7 +254,7 @@ main {
 }
 .slider .list img{
     width: 100vw;
-    height: 100%;
+    height: 80vh;
 }
 
 .slider .buttons{
@@ -289,6 +289,10 @@ main {
     .slider {
         height: 50vh;
     }
+
+    .slider .list img{
+        height: 60vh;
+    }
 }
 
 
@@ -296,17 +300,29 @@ main {
     .slider {
         height: 40vh;
     }
+
+    .slider .list img{
+        height: 50vh;
+    }
 }
 
 @media screen and (max-width: 650px) {
     .slider {
         height: 30vh;
     }
+
+    .slider .list img{
+        height: 40vh;
+    }
 }
 
 @media screen and (max-width: 550px) {
     .slider {
         height: 20vh;
+    }
+
+    .slider .list img{
+        height: 30vh;
     }
 }
 
