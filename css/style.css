@@ -303,6 +303,12 @@ main {
     }
 }
 
+@media screen and (max-width: 480px) {
+    .slider {
+        height: 20vh;
+    }
+}
+
 
 
 .study-grade {
