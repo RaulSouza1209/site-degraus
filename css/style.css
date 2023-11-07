@@ -291,7 +291,8 @@ main {
     }
 
     .slider .list img{
-        height: 60vh;
+        width: 100vw;
+        height: fit-content;
     }
 }
 
@@ -302,7 +303,8 @@ main {
     }
 
     .slider .list img{
-        height: 50vh;
+        width: 100vw;
+        height: fit-content;
     }
 }
 
@@ -312,7 +314,8 @@ main {
     }
 
     .slider .list img{
-        height: 40vh;
+        width: 100vw;
+        height: fit-content;
     }
 }
 
@@ -322,7 +325,8 @@ main {
     }
 
     .slider .list img{
-        height: 30vh;
+        width: 100vw;
+        height: fit-content;
     }
 }
 
