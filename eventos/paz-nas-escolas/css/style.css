@@ -19,7 +19,7 @@ header {
 }
 
 .container {
-    width: 100rem;
+    width: 80vw;
     margin: 0 auto;
 }
 
@@ -79,6 +79,7 @@ header {
     right: 10rem;
     transition: all .5s ease;
     opacity: 0;
+    z-index: 9999;
 }
 
 #button.show {
@@ -166,7 +167,7 @@ header {
 }
 
 .header h1 {
-    font-size: 8rem;
+    font-size: 5rem;
     font-weight: bolder;
     color: var(--white);
 }
@@ -182,7 +183,10 @@ footer {
 
 footer .container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
 }
 
 .footer-text p {
@@ -261,4 +265,87 @@ footer .container {
     justify-content: center;
     width: 100%;
     gap: 2rem;
+}
+
+
+.nav-bar-ham {
+    width: 100%;
+    position: relative;
+    background-color: var(--third-color);
+    display: none;
+}
+
+.nav-bar-ham.active {
+    display: block;
+    animation: animateMenu .5s ease;
+}
+
+.nav-bar-ham ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-bar-ham .header-nav {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.menu-hamb {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-hamb i {
+    font-size: 1.6rem;
+    transition: .5s;
+}
+
+.menu-hamb:hover i {
+    color: var(--second-color);
+}
+
+@keyframes animateMenu {
+    from {
+        opacity: 0;
+        top: -10rem;
+    } to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 1060px){
+    /* Estilizações CSS */
+    .nav-bar .container {
+        width: 90vw;
+    }
+    
+    .menu-list {
+        display: none;
+    }
+
+    .menu-hamb {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    footer .container {
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
 }

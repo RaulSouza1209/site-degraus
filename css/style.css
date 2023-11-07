@@ -706,7 +706,10 @@ footer {
 
 footer .container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
 }
 
 .footer-text p {
