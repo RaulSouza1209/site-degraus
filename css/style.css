@@ -209,6 +209,21 @@ main {
 
 
 
+@media screen and (max-width: 1060px){
+	/* Estilizações CSS */
+    .nav-bar .container {
+        width: 90vw;
+    }
+    
+    .menu-list {
+        display: none;
+    }
+
+    .menu-hamb {
+        display: flex;
+    }
+}
+
 
 
 
@@ -269,9 +284,24 @@ main {
 
 
 
+@media screen and (max-width: 975px) {
+    .slider {
+        height: 50vh;
+    }
+}
 
 
+@media screen and (max-width: 815px) {
+    .slider {
+        height: 40vh;
+    }
+}
 
+@media screen and (max-width: 650px) {
+    .slider {
+        height: 30vh;
+    }
+}
 
 
 
@@ -279,7 +309,7 @@ main {
     padding: 5rem 0;
     background-image: url('../assets/sectionbg1.png');
     background-size: cover;
-    height: 100vh;
+    height: fit-content;
 }
 
 .study-header {
@@ -359,6 +389,20 @@ main {
 
 
 
+@media screen and (max-width: 730px) {
+    .study-grade-itens {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .study-item {
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 
 
@@ -367,7 +411,7 @@ main {
 
 .diferences {
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     background-image: url('../assets/sectionbg2.png');
     background-size: cover;
     background-position: center;
@@ -437,7 +481,28 @@ main {
 
 
 
+@media screen and (max-width: 1200px) {
+    .diferences-itens {
+        flex-wrap: wrap;
+    }
 
+    .diference-item {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    .diferences-itens {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .diference-item {
+        width: 100%;
+    }
+}
 
 
 
@@ -445,7 +510,7 @@ main {
 
 .map {
     width: 100%;
-    height: 80vh;
+    height: fit-content;
     padding: 3rem 0;
     margin-bottom: 3rem;
     text-align: center;
@@ -599,8 +664,17 @@ main {
 
 
 
+@media screen and (max-width: 1200px) {
+    .contact-us .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-
+    .form {
+        width: 100%;
+    }
+}
 
 
 
@@ -656,4 +730,13 @@ footer .container {
 
 .social-medias a:hover i {
     color: var(--primary-color);
+}
+
+@media screen and (max-width: 880px) {
+    footer .container {
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
 }
