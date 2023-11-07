@@ -276,6 +276,14 @@ footer .container {
     .event {
         width: 45%;
     }
+
+}
+
+@media screen and (max-width: 1050px){
+    /* Estilizações CSS */
+    .event h1 {
+        font-size: 1.5rem;
+    }
 }
 
 
